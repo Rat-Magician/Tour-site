@@ -1,0 +1,153 @@
+section, .tour
+  display: flex
+  justify-content: center
+
+.tour
+  text-align: -webkit-center
+  perspective: 150rem
+  -moz-perspective: 150rem
+  animation-timing-function: ease
+  position: relative
+  height: 32.5rem
+  width: 19%
+  transition: 1.5s all ease-out
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.1)
+  border-radius: 0.18rem
+  margin-right: 3.75rem
+  
+  &:hover 
+    transform: rotateY(180deg)
+
+  &__wrapper
+    width: 21.3rem
+    height: 32.5rem
+    background-color: var(--color-white)
+    backface-visibility: hidden
+
+  &__neh-front
+    height: 32.5rem
+    position: absolute
+    top: 0
+
+  &__neh-back
+    visibility: hidden
+    display: flex
+    place-items: center
+    justify-content: center
+
+  &__price-btn
+    visibility: hidden
+    padding-top: 5.43rem
+
+  &:hover &__price-btn
+    visibility: visible
+
+  &:hover &__neh-back
+    background-image: linear-gradient(156.85deg, #C3956A 3.65%, #A24F03 100%)
+    width: 21.3rem
+    height: 32.5rem
+    position: absolute
+    top: 0
+    animation-timing-function: ease
+    transform: rotateY(180deg)
+    text-align: center
+    visibility: visible
+
+  &__img
+    height: 15.31rem
+    width: 21.31rem
+    position: relative
+
+  &__img1
+    background: url("../pics/ball1.png") 
+
+  &__img2 
+    background: url("../pics/ball2.png")
+
+  &__img3
+    background: url("../pics/ball3.png")
+
+  &__gradient-main
+    text-align: -webkit-right
+    position: absolute
+    bottom: -1rem
+    right: 0
+
+  &__gradient
+    background-image: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%)
+    text-align: right
+
+  &__gradient1
+    width: 98%
+
+  &__gradient2
+    width: 48%
+
+  &__gradient3
+    width: 62%
+
+  &__gradient4
+    width: 88%
+
+  &__header
+    font-size: 1.75rem
+    color: var(--color-white)
+    line-height: 2.12rem
+    text-transform: uppercase
+    font-weight: 300
+    margin: 0
+    padding: .18rem .65rem
+
+  &__info-wrap
+    color: var(--color-gray)
+    font-weight: 700
+    line-height: 1.18rem
+    text-decoration: underline
+    text-align: center
+    padding-top: 1.56rem
+
+  &__benefits
+    margin: 1.25rem 0
+    list-style-type: none
+
+  &__card-back, &__wrap
+    animation-duration: 3s
+    position: absolute
+    top: 0
+
+  &__wrapper:hover, &__neh-front 
+    transform: rotateY(0deg)
+
+  &__full-price
+    color: var(--color-white)
+    text-transform: uppercase
+    line-height: 1.2rem
+    font-weight: lighter
+    padding-bottom: 5.43rem
+
+  &__price
+    font-size: 3.75rem
+    color: var(--color-white)
+    line-height: 4.5rem
+    letter-spacing: .12rem
+
+  &__price-wrap
+    display: flex
+    text-align: center
+    flex-flow: column
+
+  &:hover &__price-wrap
+    overflow: hidden
+
+  &__price-btn1
+    margin: 0
+    z-index: -99
+  
+  &__section-btn1
+    text-align: center
+    margin-top: 1.75rem
+
+.tour__neh-back:last-child a
+  padding: 1rem 2rem
+
+

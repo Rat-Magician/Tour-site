@@ -1,0 +1,123 @@
+.first-title
+  color: var(--color-white-two)
+  &__main
+    font-weight: 800
+    font-size: 3.1rem
+    text-transform: uppercase
+    line-height: 6rem
+    display: block
+    letter-spacing: 10px
+    margin-bottom: 10px
+    animation-name: glideRight
+    animation-duration: 2s
+    animation-delay: 2s
+    animation-timing-function: ease
+
+  &__secondary
+    font-weight: lighter
+    font-size: 40px
+    line-height: 48px
+    display: block
+    letter-spacing: 5px
+    animation-name: glideLeft
+    animation-duration: 2s
+    animation-delay: 1s
+    backface-visibility: hidden
+
+.freedom-title
+  margin: 0
+  text-transform: uppercase
+  font-size: 2.25rem
+  letter-spacing: 1rem
+  font-weight: 800
+  background-image: linear-gradient(90deg, #C3956A 3.65%, #A24F03 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  text-align: center
+  transition: all .3s
+  backface-visibility: hidden
+  padding: 6rem 0 5rem 0
+  &:hover
+    text-shadow: 0rem .4rem .4rem rgba(#000, .25)
+    transform: skewY(2deg) skewX(15deg)
+
+
+main
+  background-color: var(--color-white-two)
+
+.adventure
+  display: flex
+  justify-content: center
+  &__container
+    color: var(--color-gray)
+    margin-bottom: 45px
+
+  &__container:nth-child(2)
+    margin-bottom: 0
+
+  &__title
+    font-size: 1.25rem
+    line-height: 1.5rem
+    text-transform: uppercase
+    font-weight: 700
+    margin: 0 0 10px 0
+
+  &__briefing
+    line-height: 1.3rem
+    max-width: 30rem
+    margin: 0
+
+  &__pics 
+    max-width: 100%
+    max-height: 45%
+    display: flex
+    position: relative
+    margin-left: 67px
+
+  &__picture-1
+    background: url("../pics/mountains.png")
+    width: 318px
+    height: 201px
+
+  &__picture-2
+    background: url("../pics/multiple-balloons.png")
+    width: 318px
+    height: 201px
+    position: absolute
+    top: 34%
+    left: 6%
+    z-index: 1
+    
+  &__picture-3
+    background: url("../pics/one-balloon.png")
+    width: 318px
+    height: 201px
+    position: absolute
+    top: 23%
+    right: -72%
+
+  &__outline:hover
+    border-radius: 5px
+    outline: .5rem solid var(--color-orange)
+    transform: scale(1.1)
+    z-index: 20
+    outline-offset: .5rem
+
+.feedback
+  &__header
+    font-weight: 700
+    font-size: 20px
+    line-height: 24px
+    letter-spacing: 2px
+    color: var(--color-gray)
+    text-transform: uppercase
+    margin: 10px 0
+
+  &__span
+    width: 26rem
+    display: inline-block
+.section_white
+  background-image: linear-gradient(90deg, #ffffff 3.65%, #ffffff 100%)
+
+.tour-padding
+  padding: 50px 0 30px 50px

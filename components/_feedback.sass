@@ -1,0 +1,64 @@
+.feedback
+    margin-top: 5.3rem
+    &__bg
+      display: flex
+      flex-direction: column
+      align-items: center
+
+    &__wrap
+      width: 91%
+      height: 17rem
+      background: var(--color-white)
+      transform: skewX(330deg)
+      position: relative
+      opacity: 0.9
+      box-shadow: var(--box-shadow-two)
+      margin-bottom: 5rem
+
+      & > *
+        transform: skewX(-330deg)
+        position: absolute
+        right: 12%
+        top: 13%
+
+    &__pic 
+      width: 166px
+      height: 166px
+      left: 11%
+      top: 14%
+      //position: relative
+      background-color: orangered
+      -webkit-shape-outside: circle(50% at 50% 50%)
+      shape-outside: circle(50% at 50% 50%)
+      clip-path: circle(50% at 50% 50%)
+
+    &__img
+      height: 100%
+      width: 166px
+      background: url("../pics/guy.png")
+
+      &:hover, &__name
+        filter: blur(4px) brightness(60%)
+        //opacity: .6
+
+    &__img2
+      background: url("../pics/girl.png")
+
+    &__name
+      font-size: 1.5rem
+      color: var(--color-white)
+      position: absolute
+      text-transform: uppercase
+      top: 31%
+      text-align: center
+      opacity: 0
+      transform: translate(0%, 42%)
+      transition: all .5s
+
+      &:hover 
+        opacity: 1
+        transform: translate(0%, 0%)
+        transition: all .5s
+
+.section_adventures
+  z-index: 99
