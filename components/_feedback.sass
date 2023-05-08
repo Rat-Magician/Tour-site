@@ -1,18 +1,20 @@
 .feedback
     margin-top: 5.3rem
     &__bg
+      width: 100%
       display: flex
       flex-direction: column
       align-items: center
 
     &__wrap
-      width: 91%
+      width: 42%
       height: 17rem
       background: var(--color-white)
       transform: skewX(330deg)
       position: relative
       opacity: 0.9
       box-shadow: var(--box-shadow-two)
+      text-shadow: 1px 2px var(--color-white)
       margin-bottom: 5rem
 
       & > *
@@ -32,14 +34,19 @@
       shape-outside: circle(50% at 50% 50%)
       clip-path: circle(50% at 50% 50%)
 
+      &:hover
+        .feedback__img
+          filter: blur(4px) brightness(60%)
+          transition: all .5s
+        .feedback__name
+          opacity: 1
+          transform: translate(0%, 0%)
+          transition: all .5s
+
     &__img
       height: 100%
       width: 166px
       background: url("../pics/guy.png")
-
-      &:hover, &__name
-        filter: blur(4px) brightness(60%)
-        //opacity: .6
 
     &__img2
       background: url("../pics/girl.png")
@@ -50,15 +57,13 @@
       position: absolute
       text-transform: uppercase
       top: 31%
+      width: 100%
+      height: 100%
       text-align: center
       opacity: 0
       transform: translate(0%, 42%)
       transition: all .5s
-
-      &:hover 
-        opacity: 1
-        transform: translate(0%, 0%)
-        transition: all .5s
+      text-shadow: none
 
 .section_adventures
   z-index: 99
